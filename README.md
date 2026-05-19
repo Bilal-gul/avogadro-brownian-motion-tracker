@@ -22,3 +22,6 @@ Bu proje, mikroskobik ortamdaki polen tanelerinin kaotik hareketlerini (Brownian
 * Python 3
 * OpenCV (Yapay Görme)
 * NumPy (Vektörel Matematik)
+
+## 📌 Teşekkür / Atıf (Acknowledgment)
+Bu projede test verisi olarak kullanılan mikroskobik polen videosu, eğitim ve araştırma amacıyla YouTube üzerindeki orijinal kaynağından referans alınmıştır. Akademik dürüstlük gereği kaynak gösterilerek depoya dahil edilmiştir.
