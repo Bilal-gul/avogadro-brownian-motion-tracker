@@ -1,6 +1,5 @@
 import cv2
 import time 
-import matplotlib.pyplot as plt
 import numpy as np 
 
 cap = cv2.VideoCapture('C:\\Users\\bilol\\Desktop\\Opencv Project\\Brownian-Motion.mp4')
