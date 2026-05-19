@@ -1,3 +1,6 @@
+# Orijinal Video Kaynağı / Credit: [https://youtu.be/R5t-oA796to?si=aNH1SUEJAlsTCEv-]
+# Bu video eğitim ve akademik araştırma (Avogadro Sabiti Doğrulaması) amacıyla kullanılmıştır.
+
 import cv2
 import time 
 import numpy as np 
