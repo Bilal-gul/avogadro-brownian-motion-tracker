@@ -17,7 +17,7 @@ last_id = 0
 all_movements = []
 
 PIXEL_TO_METER = 0.098e-6
-dt = 0.04
+dt = 0.0425
 T = 293.15     
 eta = 0.001     
 r = 1.5e-6     
