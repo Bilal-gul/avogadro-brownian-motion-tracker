@@ -1,29 +1,37 @@
-# 🔬 Otonom Brownian Motion Analiz Motoru & Avogadro Hesabı
+# 🔬 Autonomous Brownian Motion Analyzer & Avogadro Constant Calculator
 
-Bu proje, mikroskobik ortamdaki polen tanelerinin kaotik hareketlerini (Brownian Motion) yapay görme algoritmalarıyla otonom olarak takip etmek ve Einstein-Stokes difüzyon teorisi üzerinden **Avogadro Sabitini** hesaplamak amacıyla geliştirilmiştir.
+An advanced computer vision pipeline engineered to autonomously track the chaotic trajectories of microscopic pollen particles (Brownian Motion) and mathematically compute the **Avogadro Constant** utilizing the Einstein-Stokes Diffusion Theory.
 
-## 🚀 Öne Çıkan Mühendislik Çözümleri
+---
 
-* **Yapışık Nesne Segmentasyonu:** Polenlerin temas anında birbirine karışmasını engellemek amacıyla `cv2.distanceTransform` tabanlı çekirdek izolasyonu uygulanmıştır.
-* **Dinamik Hafıza ve Takip:** `cv2.moments` ile anlık ağırlık merkezleri hesaplanmış ve Öklid mesafesi üzerinden dinamik ID eşleştirmesi yapılmıştır.
-* **Fiziksel Kalibrasyon:** Piksel dünyası ile makroskopik fizik dünyası (`PIXEL_TO_METER`) kalibre edilerek ham veri saf fiziksel veriye dönüştürülmüştür.
+## 🚀 Core Engineering & Computer Vision Solutions
 
-## 📊 Analiz Raporu (Başarı Metrikleri - Güncel)
+* **Overlapping Particle Segmentation:** Implements a strict `cv2.distanceTransform` and watershed-based core isolation routine to prevent ID swapping and particle merging during physical contact.
+* **Dynamic Centroid Tracking:** Computes instantaneous center-of-mass matrices via `cv2.moments`, executing deterministic trajectory assignments across successive frames using spatial Euclidean distance minimization.
+* **Macro-Physical Calibration:** Maps pixel space coordinates to international metric standards (`PIXEL_TO_METER`) via manual spatial calibration, converting raw digital coordinates into high-precision kinematic datasets.
 
-9.006 adet anlık hareket verisi işlenerek elde edilen nihai sonuçlar:
+---
 
-| Parametre | Değer / Sonuç |
+## 📊 Analytical Performance Metrics
+
+Based on the statistical analysis of 9,006 sequential displacement vectors, the analytical pipeline converged with remarkable precision against reference physical boundaries:
+
+| Kinematic / Physical Parameter | Empirical Computed Value |
 | :--- | :--- |
-| **Analiz Edilen Toplam Veri** | 9.006 Adet Anlık Titreşim |
-| **Hesaplanan Difüzyon Katsayısı (D)** | 1.4309e-13 m²/s |
-| **Hesaplanan Avogadro Sabiti** | **6.0244e+23** |
-| **Teorik Gerçek Değer** | **6.022e+23** |
-| **Teorik Değerden Sapma Oranı** | **%0.04** |
+| **Total Processed Displacement Vectors** | 9,006 Data Points |
+| **Computed Diffusion Coefficient ($D$)** | $1.4309 \times 10^{-13} \text{ m}^2/\text{s}$ |
+| **Empirically Calculated Avogadro Constant ($N_A$)** | **$6.0244 \times 10^{23}$** |
+| **Theoretical Standard Value** | **$6.022 \times 10^{23}$** |
+| **Experimental Margin of Error** | **%0.04** |
 
-## 🛠️ Kullanılan Teknolojiler
-* Python 3
-* OpenCV (Yapay Görme)
-* NumPy (Vektörel Matematik)
+---
 
-## 📌 Teşekkür / Atıf (Acknowledgment)
-Bu projede test verisi olarak kullanılan mikroskobik polen videosu, eğitim ve araştırma amacıyla YouTube üzerindeki orijinal kaynağından referans alınmıştır. Akademik dürüstlük gereği kaynak gösterilerek depoya dahil edilmiştir.
+## 🛠️ Stack & Dependency Layer
+* **Python 3** - Primary execution runtime.
+* **OpenCV** - Real-time matrix manipulation and computer vision algorithms.
+* **NumPy** - Vectorized linear algebra and kinematic tensor computations.
+
+---
+
+## 📌 Acknowledgment & Data Sources
+The high-resolution microscopic pollen trajectory videos utilized for pipeline validation were sourced from public educational content repositories on YouTube. In alignment with academic integrity and data citation standards, the source components have been fully referenced and structured within this repository.
